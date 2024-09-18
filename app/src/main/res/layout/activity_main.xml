@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f6ee"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar1"
+        app:layout_constraintVertical_bias="0.5"
+        app:rowCount="3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Currency"
+            android:weightSum="2"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#000"
+                app:srcCompat="@drawable/currency" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Currency"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Length"
+            android:weightSum="2"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="#000"
+                app:srcCompat="@drawable/distance"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Length"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Area"
+            android:weightSum="2"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="#000"
+                app:srcCompat="@drawable/area"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Area"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Volume"
+            android:weightSum="2"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="#000"
+                app:srcCompat="@drawable/volume"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Volume"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Weight"
+            android:weightSum="2"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="#000"
+                app:srcCompat="@drawable/weight"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Weight"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Temperature"
+            android:weightSum="2"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="#000"
+                app:srcCompat="@drawable/temperature"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Temperature"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Speed"
+            android:weightSum="2"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="#000"
+                app:srcCompat="@drawable/speed"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Speed"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Pressure"
+            android:weightSum="2"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="#000"
+                app:srcCompat="@drawable/pressure"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Pressure"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#e2dfd2"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="redirect"
+            android:orientation="vertical"
+            android:tag="Power"
+            android:weightSum="2"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#000"
+                app:srcCompat="@drawable/power" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Power"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#f3e5ab"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Unit converter"
+        app:titleTextColor="#000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
